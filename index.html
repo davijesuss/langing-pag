@@ -5,31 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+   
+   <style>
+       #topo{
+    background: linear-gradient( #087876, #1F3D3D);
+  
+}
+
+.logo{
+    width: 70px;
+    padding: 1px;  
+   
+}
+
+.texto-imagem{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.logo, .texto-imagem{
+    display: inline-block;
+}
+.imagem-cabealho2{
+    width: 100%;
+    height: 90px;
+}
+.login{
+    background-color: rgba(39, 117, 128, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+.caixa-nome{
+padding: 15px;
+border: none;
+font-size: 15px;
+border-radius: 15px;
+}
+.caixa-senha{
+padding: 15px;
+border: none;
+font-size: 15px;
+border-radius: 15px;
+}
+.botão-entrar{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+   </style>
 </head>
 <body>
-    <header>
-        <img src="guanambi_log.jpg" alt=" guanambi imagem">
-        <h1>PM DE SÃO FIDÉLIS</h1>
-        <P>SÃO FIDÉLIS / RJ</P>
-        <P>PRAÇA SÃO FIDÉLIS, 151 CENTRP</P>
-
-    </header>
-
-    <main>
-      <img src="fundo_desfocado.jpg" alt="imagem desfocada">
-      <p>Recursos Humanos e <br>
-        Departamento Pessoal</p>
-    </main>
-
-    <footer>
-        <p>Usuário: *</p>
-        <input type="name" name="nome" placeholder="nome">
-        <p>Senha: *</p>
-        <input type="password" name="Senha" placeholder="Senha"><br><br>
-        <button>Entrar</button>
-        
-
-    </footer>
+    <div id="topo">
+        <div class="imagem-texto">
+        <img class='logo' src="guanambi.jpg" alt=" guanambi imagem">
+        <p class="texto-imagem"> PM DE SÃO FIDÉLIS<br/> 
+            SÃO FIDÉLIS / RJ ,<br/>
+            PRAÇA SÃO FIDÉLIS, 151 - CENTRO</p>
+        </div>
+    </div>
+    <div class ="container">
+        <img class="imagem-cabealho2" src="desfocado.jpg" alt="imagem desfocada">
+        <p class="legenda">Recursos Humanos e <br>
+            Departamento Pessoal</p>
+    </div>
+    <div class="login">
+        <p class="usuario">Usuário: *</p>
+          <input class="caixa-nome" type="name" name="nome" placeholder="nome">
+          <p class="senha">Senha: *</p>
+          <input class="caixa-senha" type="password" name="Senha" placeholder="Senha"><br><br>
+          <button class="botão-entrar">Entrar</button>
+    </div>
 
 </body>
 </html>
+

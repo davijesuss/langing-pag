@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+   <style>
+       body{
+           margin: 0;
+       }
+ #topo{
+    background: linear-gradient( #087876, #1F3D3D);
+    
+  
+}
+#elementos-caixa{
+    margin: 50px;
+
+}
+
+.logo{
+    width: 70px;
+    padding: 1px;  
+    padding: 5px;
+   
+}
+
+.texto-imagem{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+    
+}
+.logo, .texto-imagem{
+    display: inline-block;
+}
+
+.legenda {
+    color: black;
+    font-size: 20px
+    
+}
+.imagem-desfocada {
+    width: 100%;
+    height: 100px;
+}
+.galery1{
+    background: url("../paglogin-css/desfocar.jpg");
+}
+
+.login{
+    width: 500px;
+    height: 300px;
+   border: 2px solid #1F3D3D;
+   margin:  50px auto;
+
+}
+.caixa-nome{
+padding: 6px;
+border: 2px solid #1F3D3D ;
+width: 400px;
+font-size: 18px;
+
+
+}
+.caixa-senha{
+padding: 6px;
+border: 3px solid #1F3D3D;
+width: 400px;
+font-size: 15px;
+
+}
+.botão-entrar{
+    background-color: #1F3D3D;
+  color: white;
+    padding: 15px;
+    width: 70px;
+    height: 30px;
+}
+ul{
+list-style: none;
+font-size: 15px;
+}
+div.textos-caixa{
+    position: static;
+    right: 16px;
+    bottom: 4px;
+  left: 400px;
+  
+}
+
+   </style>
+</head>
+<body>
+    <div id="topo">
+        <div class="imagem-texto">
+        <img class='logo' src="guanambi.jpg" alt=" guanambi imagem">
+        <p class="texto-imagem"> PM DE SÃO FIDÉLIS<br/> 
+            SÃO FIDÉLIS / RJ ,<br/>
+            PRAÇA SÃO FIDÉLIS, 151 - CENTRO</p>
+        </div>
+    </div>
+    
+       <div>
+    
+        <img class="imagem-desfocada" src="imagem.jpg" alt="desfocada">
+        <p class="description zindex">Recursos Humanos e <br>
+            Departamento Pessoal </p>
+        </div>
+ 
+    <div class="login"> 
+        <div id="elementos-caixa">
+            <p class="usuario">Usuário *</p>
+          <input class="caixa-nome" type="name" name="nome" placeholder="nome">
+          <p class="senha">Senha: *</p>
+          <input class="caixa-senha" type="password" name="Senha" placeholder="Senha"><br><br>
+          <button class="botão-entrar">Entrar</button>
+        </div>
+        <div class="textos-caixa">
+        <ul>
+            <li> Voltar</li>
+            <li> Novo usuário</li>
+            <li> Esqueci meu login</li>
+            <li> Esqueci minha Senha </li>
+
+        </ul>
+    </div>
+    </div>
+
+</body>
+</html>
